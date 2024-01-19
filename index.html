@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin-Fashion </title>
+    <!-- tailwind and daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google font bebas and roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,20 +25,50 @@
 </head>
 
 <body class="text-[#B6B6B6]">
-    <header class="bg-[#FFFBF0] py-20 px-4 md:px-32">
+    <header class="bg-[#FFFBF0] lg:py-3 px-2 md:px-32">
         <!-- nav section  -->
-        <nav>
-
+        <nav class="sticky top-0 z-50">
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu text-base menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-100">
+                            <li><a>Home</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>News</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-2xl lg:text-4xl"><span class="text-[#FABE4C]">Penguin</span> Fashion</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu text-base menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>News</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <a class="btn lg:px-10 bg-[#94AD2F] text-white lg:text-xl" href="link/login.html">Login</a>
+                </div>
+            </div>
         </nav>
         <!-- banner section  -->
-        <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="flex flex-col pt-10 p-2 md:flex-row justify-between items-center">
             <div class="space-y-3">
-                <h1 class="text-5xl uppercase font-bebas md:text-7xl"><span class="text-[#FABE4C]">Be the Penguins</span><br>
-                    <span class="text-5xl text-[#363958] md:text-7xl">of Winter</span> </h1>
-                <P>Lorem Ipsum is simply dummy text of the printing
-                    and typesetting industry.</P>
+                <h1 class="text-3xl uppercase font-bebas md:text-7xl"><span class="text-[#FABE4C]">Be the Penguins</span><br>
+                    <span class="text-3xl text-[#363958] md:text-7xl">of Winter</span> </h1>
+                <P>Welcome to Penguin-Fashion, where style meets sophistication your ultimate destination for trendy apparel curated just for you.</P>
                 <button
-                    class=" text-white font-medium uppercase px-9 py-4 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl"><svg
+                    class=" text-white font-medium uppercase py-2 px-4 md:px-9 md:py-4 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl"><svg
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-6 h-6  inline">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -52,7 +84,7 @@
     </header>
     <main class="max-w-7xl mx-auto">
         <!-- woman jacket section  -->
-        <section class="py-12">
+        <section class="pt-24">
             <h3 class="text-[#363958] text-center text-5xl font-bebas md:text-left ml-5">Woman Jackets</h3>
             <!-- jackets container  -->
             <div class="grid grid-cols-1 p-4 md:grid-cols-2 lg:grid-cols-3 gap-7">
@@ -67,7 +99,7 @@
                     <div class="flex justify-between">
                         <h3 class="text-4xl font-black text-[#FABE4C]">$234</h3>
                         <button
-                            class=" text-white font-medium uppercase px-9 py-4 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl"><svg
+                            class=" text-white font-medium uppercase py-2 px-4 md:px-9 md:py-4  bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl"><svg
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6  inline">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -87,7 +119,7 @@
                     <div class="flex justify-between">
                         <h3 class="text-4xl font-black text-[#FABE4C]">$234</h3>
                         <button
-                            class=" text-white font-medium uppercase px-9 py-4 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl"><svg
+                            class=" text-white font-medium uppercase py-2 px-4 md:px-9 md:py-4 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl"><svg
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6  inline">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -107,7 +139,7 @@
                     <div class="flex justify-between">
                         <h3 class="text-4xl font-black text-[#FABE4C]">$234</h3>
                         <button
-                            class=" text-white font-medium uppercase px-9 py-4 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl"><svg
+                            class=" text-white font-medium uppercase py-2 px-4 md:px-9 md:py-4 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl"><svg
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6  inline">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -120,7 +152,7 @@
         </section>
 
         <!-- Man Jacket Section  -->
-        <section class="py-12">
+        <section class="pt-24 pb-24">
             <h3 class="text-[#363958] text-center font-bebas text-5xl md:text-left ml-5">Man Jackets</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
 
@@ -135,7 +167,7 @@
                 <div class="flex justify-between">
                     <h2 class=" text-4xl font-black text-[#FABE4C]">$234</h2>
                     <button
-                        class="text-lg font-medium text-[#fff] rounded-xl py-4 px-9 bg bg-gradient-to-r from-[#A4BC46] to-[#85A019] "><svg
+                        class="text-lg font-medium text-[#fff] rounded-xl py-2 px-4 md:px-9 md:py-4 bg bg-gradient-to-r from-[#A4BC46] to-[#85A019] "><svg
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6 inline">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -155,7 +187,7 @@
                 <div class="flex justify-between">
                     <h2 class=" text-4xl font-black text-[#FABE4C]">$234</h2>
                     <button
-                        class="text-lg font-medium text-[#fff] rounded-xl py-4 px-9 bg bg-gradient-to-r from-[#A4BC46] to-[#85A019] "><svg
+                        class="text-lg font-medium text-[#fff] rounded-xl py-2 px-4 md:px-9 md:py-4 bg bg-gradient-to-r from-[#A4BC46] to-[#85A019] "><svg
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6 inline">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -175,7 +207,7 @@
                 <div class="flex justify-between">
                     <h2 class=" text-4xl font-black text-[#FABE4C]">$234</h2>
                     <button
-                        class="text-lg font-medium text-[#fff] rounded-xl py-4 px-9 bg bg-gradient-to-r from-[#A4BC46] to-[#85A019] "><svg
+                        class="text-lg font-medium text-[#fff] rounded-xl py-2 px-4 md:px-9 md:py-4 bg bg-gradient-to-r from-[#A4BC46] to-[#85A019] "><svg
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6 inline">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -191,7 +223,7 @@
 
         <!-- last section -->
 
-        <section class="my-14">
+        <section class="mb-24">
             <div class="grid grid-cols-1 px-3 items-center gap-16 md:grid-cols-2">
             <div class="font-roboto">
                 <div class="mb-4 flex rounded-3xl items-center p-5 shadow-lg">
@@ -233,8 +265,8 @@
         </div>
         </section>
     </main>
-    <footer class="bg-[#FFFBF0] italic text-[#3d3d3d] my-20 py-10 font-roboto md:text-2xl tracking-widest">
-        <h4 class="text-center">© 2024 Penguin-Fashion. All rights reserved.</h4>
+    <footer class="bg-[#FFFBF0] italic text-[#3d3d3d] mt-20 py-10 font-roboto md:text-2xl tracking-widest">
+        <h4 class="text-center">© 2024 All rights reserved by BISSAWJIT.</h4>
     </footer>
 </body>
 
